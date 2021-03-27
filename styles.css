@@ -1,9 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("fontawesome-all.min.css");
+
 body {
-  font-family: "Trirong", serif;
-  background-image: linear-gradient(45deg, rgba(0,0,0,0), rgba(0,0,0,1));
-  font-size: 16px;
-  color: gray;
+    font-family: "Trirong", serif;
+    background: linear-gradient(to right, #F0B7A1 0%, #8C3310 50%, #752201 51%, #BF6E4E 100%);
+    font-size: 16px;
+    color: gray;
+    margin: 0;
+	padding: 20px;
+	border: 0;
+	vertical-align: baseline;
 }
+
+.nav{
+    background-color: #282828;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    cursor: default;
+    height: 3.5em;
+    line-height: 3.5em;
+}
+
+#nav ul {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+#nav li {
+    display: inline-block;
+    padding-left: 0;
+}
+
+#nav a {
+-moz-transition: background-color .2s ease-in-out;
+-webkit-transition: background-color .2s ease-in-out;
+-ms-transition: background-color .2s ease-in-out;
+transition: background-color .2s ease-in-out;
+position: relative;
+display: block;
+color: #fff;
+text-decoration: none;
+outline: 0;
+font-weight: 600;
+border-radius: 8px;
+color: #fff;
+height: 2.5em;
+line-height: 2.5em;
+padding: 0 1.25em;
+}
+
+#nav a:hover {
+    color: #fff !important;
+    background: #383838;
+}
+
+#nav a.active {
+    background: #484848;
+}
+
+#nav a.active:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -0.6em;
+    left: 50%;
+    margin-left: -0.75em;
+    border-left: solid 0.75em transparent;
+    border-right: solid 0.75em transparent;
+    border-top: solid 0.6em #282828;
+}
+
+
 
 a {
   color: var(--bs-blue);
@@ -26,4 +98,84 @@ h3 {
 p{
     color:white
 }
+
+#intro{
+    background: #000000;
+}
+
+#work{
+    background: #000000;
+}
+
+#education{
+    background: #000000;
+}
+
+#blank{
+    padding-top:100px
+}
+
+#blank1{
+    padding-top:100px
+}
+
+#blank2{
+    padding-top:100px
+}
+
+#blank3{
+    padding-top:100px
+}
+
+
+/*Wrappers*/
+.wrapper{
+	background-image: url("images/bg.png");
+	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+	padding: 8em 0 8em 0;
+	text-align: center;
+}
+
+.wrapper.style1 {
+	background-image: none;
+	background-color: #fff;
+}
+
+.wrapper.style2 {
+    background-color: #fafafa;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.wrapper.style3 {
+    background-color: #f4f4f4;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.wrapper.style4 {
+    background-color: #303030;
+    color: #999;
+    text-shadow: -1px -1px 0px #181818;
+}
+
+.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
+    color: #fff;
+}
+
+.wrapper.style4 form input[type=text],
+.wrapper.style4 form input[type=password],
+.wrapper.style4 form select,
+.wrapper.style4 form textarea {
+    border: none;
+    background: #282828;
+}
+
+    .wrapper.style4 form input[type=text]:focus,
+    .wrapper.style4 form input[type=password]:focus,
+    .wrapper.style4 form select:focus,
+    .wrapper.style4 form textarea:focus {
+        background: #252525;
+    }
+
+
+
 

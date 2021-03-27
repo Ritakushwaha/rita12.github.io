@@ -1,0 +1,18 @@
+$color: blue;
+
+ul{
+  font-size: 14px;
+  color: $color;
+}
+
+ol{
+  font-size: 18px;
+  color: $color;
+}
+
+// -- sass F:\HTML_Project\dart-sass\variable.scss:F:\HTML_Project\dart-sass\variable.css -->
+
+//For automatic compilation
+//sass --watch F:\HTML_Project\dart-sass\variable.scss:F:\HTML_Project\dart-sass\variable.css
+//Sass is watching for changes. Press Ctrl-C to stop.
+//Compiled F:\HTML_Project\dart-sass\variable.scss to F:\HTML_Project\dart-sass\variable.css.
