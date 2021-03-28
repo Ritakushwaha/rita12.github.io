@@ -13,6 +13,25 @@ table.default td {
     padding: 1em 0em 1em 5em;
 }
 
+@media screen and (max-width: 1680px) {
+    .default {        width: 1200px;    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .default {        width: 960px;    }
+}
+
+@media screen and (max-width: 980px) {
+    .default {        width: 960px;    }
+}
+
+@media screen and (max-width: 736px) {
+    .default {
+        width: 100%;
+        max-width: calc(100% - 30px);
+    }
+}
 
 
 html, body{
@@ -50,6 +69,8 @@ body {
 
 #nav{
     background-color: #000000;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     text-align: center;
     position: fixed;
     left: 0;
@@ -57,7 +78,7 @@ body {
     width: 100%;
     z-index: 10000;
     cursor: default;
-    height: 3.5em;
+    height: 80px;
     line-height: 3.5em;
 }
 
@@ -148,18 +169,13 @@ h3 {
 
 #blank5{    padding-top:30px;}
 
+#blank6{    padding-top:30px;}
 
-/*Wrappers*/
 .wrapper{
 	background: #000000
 	box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 	padding: 3em 0 3em 0;
 }
-
-.wrapper.style1 {
-	background-image: #000;
-}
-
 
 a {
     -moz-transition: color .2s ease-in-out;
@@ -1557,6 +1573,7 @@ ul.social li a:hover:before {
         box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: left;
 		padding: 2em;
+		border-radius: 50px;
 	}
 
     .box.style1 {
